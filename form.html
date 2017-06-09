@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="icon" href="img/Pinkico.ico" type="image/ico"> 
+  <title>Pink &mdash; конкурс </title>
+</head>
+<body>
+  <header class="page-header">
+    <h1 class="visually-hidden">Приложение «Pink» — удали серость</h1>
+      <input id="page-header__control" type="checkbox">
+     <div class="page-header__wrapper">
+      <label class="page-header__toggle" for="page-header__control" title="Открыть меню">
+      </label>
+      <div class="page-header__logo">
+        <svg class="logo--mobile" width="75" height="22">
+          <use  xlink:href="#logo-pink-white-mobile"/>
+        </svg>
+        <svg class="logo--tablet" width="147" height="40">
+          <use  xlink:href="#logo-pink-white-tablet"/>
+        </svg> 
+        <svg class="logo--desktop">
+          <use  xlink:href="#logo-pink-white-desktop"/>
+        </svg> 
+      </div>
+    <nav class="page-header__list">
+      <a class="page-header__item" href="index.html">Главная</a>
+      <a class="page-header__item" href="photo.html">Фотографии</a>
+      <a class="page-header__item page-header__item--active" >Конкурс</a>
+      <a class="page-header__item" href="">HTML Academy</a>
+    </nav>
+    </div>
+  </header>
+  <section class="page-title">
+    <h1 class="page-title__text">Конкурс на самое безбашенное<br>путешествие с Пинк</h1>
+  </section>
+  <section class="form-block">
+    <div class="form-block__wrapper">
+    <h2 class="form-block__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h2>
+    <p class="form-block__subtitle"> Пожалуйста, заполните форму ниже:</p>
+     
+
+      
+    <form class="form-block__content"  action="https://echo.htmlacademy.ru/" method="post">
+
+      <div class="form-block__bio">
+        <label for="surname">Фамилия:</label>
+        <input class="form-block__value" type="text" name="surname" placeholder="Укажите фамилию *" id="surname">
+        <label for="name">Имя:</label>
+        <input class="form-block__value" type="text" name="name" placeholder="Введите ваше имя*" id="name">
+        <label for="middlename">Отчество</label>
+        <input class="form-block__value" type="text" name="middlename" placeholder="Ну и отчество тоже" id="middlename">
+      </div>
+ 
+     
+      <div class="form-block__fieldset achievements">
+        <h3 class="form-block__caption form-block__caption--moblile">Ваши безбашенные
+        достижения в путешествии</h3>
+          <input type="checkbox" name="achievement-1" id="achievement-1" checked>
+          <input  type="checkbox" name="achievement-2" id="achievement-2" checked>
+          <input type="checkbox" name="achievement-3" id="achievement-3">
+          <input type="checkbox" name="achievement-4" id="achievement-4">
+          <input type="checkbox" name="achievement-5" id="achievement-5" checked>
+          <input  type="checkbox" name="achievement-6" id="achievement-6">
+          <div class="achievements__controls">
+            <label class="achievements__control achievements__control-1"  for="achievement-1">Сделал селфи с акулой</label>
+            <label class="achievements__control achievements__control-2"  for="achievement-2">Обгорел на пляже</label>
+            <label class="achievements__control achievements__control-3"  for="achievement-3">Разгромил отель</label>
+            <label class="achievements__control achievements__control-4"  for="achievement-4">Накупил сувениров</label>
+            <label class="achievements__control achievements__control-5"  for="achievement-5">Удержал башню</label>
+            <label class="achievements__control achievements__control-6"  for="achievement-6">Выжил</label>
+          </div>
+      </div>
+
+      <div class="form-block__fieldset form-block__fieldset--contacts">
+        <h3 class="form-block__caption form-block__caption--none">Контактная информация</h3>
+        <label for="tel">Номер телефона</label>
+        <input class="form-block__value" type="tel" name="tel" placeholder="Номер, пожалуйста" id="tel">
+        <label for="email">Адрес почты</label>
+        <input class="form-block__value" type="email" name="email" placeholder="Введите почту *" id="email">
+      </div>
+      <div class="form-block__fieldset attachment">
+        <h3 class="form-block__caption form-block__caption--moblile">С каким приложением
+        путешествовали?</h3>
+        <input type="radio" name="os" id="os-ios" checked>
+        <input type="radio" name="os" id="os-android">
+        <input type="radio" name="os" id="others">
+          <div class="attachment__controls">
+            <label class="attachment__os attachment--ios"  for="os-ios">Pink для iOS
+            </label>
+            <label class="attachment__os attachment--android"  for="os-android">Pink для Androind
+            </label>
+            <label class="attachment__os attachment--others"  for="others">Другое
+            </label>
+          </div>
+      </div>
+      <div class="form-block__fieldset">
+      <h3 class="form-block__caption form-block__caption--moblile">Опишите свои эмоции</h3>
+      <textarea class="form-block__value form-block__value--textarea"placeholder="Можно прям в красках, не стесняясь в выражениях" id="desc-emotions"></textarea>
+      </div>
+      <button class="btn form-block__btn-submit btn" type="submit">Отправить форму</button>
+      <p class="form-block__legend"><sup>*</sup> &mdash; Обязательные<span class="add-text"> для заполения</span> поля</p>
+    </form>
+    </div>
+  </section>
+  <footer class="page-footer">
+     <div class="page-footer__wrapper">
+      <div class="page-footer__logo">
+      <svg class="logo-footer__moble-tablet" width="147" height="40">
+        <use class  xlink:href="#logo-pink-blue-mobile"/>
+      </svg> 
+      <svg class="logo-footer__desktop" width="147" height="40">
+        <use class  xlink:href="#logo-pink-blue-desktop"/>
+      </svg> 
+      </div>
+      <div class="page-footer__social">
+        <a class="social-link" href="https://twitter.com">
+            Мы в Твиттере
+          <svg class="icon-twitter" width="19" height="15">
+            <use  xlink:href="#icon-twitter"/>
+          </svg> 
+        </a>
+        <a   class="social-link" href="https://www.facebook.com/htmlacademy">Мы в Фейсбукe
+          <svg class="icon-facebook" width="9" height="18">
+            <use  xlink:href="#icon-facebook"/>
+          </svg> 
+        </a>
+        <a   class="social-link" href="https://www.youtube.com">Мы на Ютубе 
+          <svg class="icon-youtube" width="15" height="13">
+            <use  xlink:href="#icon-youtube"/>
+          </svg>
+        </a>
+      </div>
+      <div class="page-footer__copyright">
+        <a class="page-footer__copyright-link" href="https://htmlacademy.ru/intensive/adaptive"><b>Разработано:</b>
+          HTML Academy
+        <svg class="icon-htmlacademy" width="52" height="59">
+          <use  xlink:href="#htmlacademy"/>
+        </svg>
+        </a>
+      </div>
+      </div>
+    </footer>
+      <div class="overlay"></div>
+
+    <div class="popup-success">
+      <h2 class="popup-success__title">Ваша заявка отправлена</h2>
+      <p class="popup-success__info">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и 
+оповестим вас.</p>
+      <div class="popup-success__wrapper-close">
+      <button type="button" class="popup-success__close">Закрыть окно </button>
+      </div>
+    </div>
+    <div class="popup-failure">
+      <h2 class="popup-failure__title">Что-то пошло не так!</h2>
+      <p class="popup-failure__info"> Проверьте поля, отмеченные как обязательные, скорее всего вы забыли их заполнить</p>
+      <button type="button" class="popup-failure__close">Ок</button>
+    </div>
+        <script>
+!function(e,s){"use strict";var o="img/symbols-pink.svg",a=1;if(!s.createElementNS||!s.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect)return!0;var r,u,t="localStorage"in e&&null!==e.localStorage,c=function(){s.body.insertAdjacentHTML("afterbegin",u)},l=function(){s.body?c():s.addEventListener("DOMContentLoaded",c)};if(t&&localStorage.getItem("inlineSVGrev")==a&&(u=localStorage.getItem("inlineSVGdata")))return l(),!0;try{r=new XMLHttpRequest,r.open("GET",o,!0),r.onload=function(){r.status>=200&&r.status<400&&(u=r.responseText,l(),t&&(localStorage.setItem("inlineSVGdata",u),localStorage.setItem("inlineSVGrev",a)))},r.send()}catch(i){}}(window,document);
+  </script>
+  <script>
+    var popupSuccess=document.querySelector(".popup-success"),popupFailure=document.querySelector(".popup-failure"),formAction=document.querySelector(".form-block__content"),closeSuccess=popupSuccess.querySelector(".popup-success__close"),closeFailure=popupFailure.querySelector(".popup-failure__close"),name=document.querySelector("[name=name]"),surname=document.querySelector("[name=surname]"),email=document.querySelector("[name=email]"),overlay=document.querySelector(".overlay");formAction.addEventListener("submit",function(e){name.value&&surname.value&&email.value||(e.preventDefault(),popupFailure.classList.add("popup-failure--show"),overlay.classList.add("overlay--active"))}),closeFailure.addEventListener("click",function(e){e.preventDefault(),popupFailure.classList.remove("popup-failure--show"),overlay.classList.remove("overlay--active")}),window.addEventListener("keydown",function(e){27===e.keyCode&&popupFailure.classList.contains("popup-failure--show")&&(popupFailure.classList.remove("popup-failure--show"),overlay.classList.remove("overlay--active"))}),formAction.addEventListener("submit",function(e){name.value,surname.value,email.value&&(e.preventDefault(),popupFailure.classList.remove("popup-failure--show"),popupSuccess.classList.add("popup-success--show"),overlay.classList.add("overlay--active"))}),closeSuccess.addEventListener("click",function(e){e.preventDefault(),popupSuccess.classList.remove("popup-success--show"),overlay.classList.remove("overlay--active")}),window.addEventListener("keydown",function(e){27===e.keyCode&&popupSuccess.classList.contains("popup-success--show")&&(popupSuccess.classList.remove("popup-success--show"),overlay.classList.remove("overlay--active"))}),overlay.addEventListener("click",function(e){e.preventDefault(),overlay.classList.remove("overlay--active"),popupSuccess.classList.remove("popup-success--show"),popupFailure.classList.remove("popup-failure--show")});
+    
+  </script>
+</body>
+</html>
